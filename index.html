@@ -93,7 +93,7 @@
   <div id="password-screen">
     <h1>A Special Surprise Just for You.<br>Mi Moshi linda ❤️</h1>
     <p style="font-size:18px; margin:20px 0;">Enter the password to unlock your message:</p>
-    <p style="color:#ff69b4; font-style:italic;">Hint: Our anniversary date (4 numbers only) (MonthDate)</p>
+    <p style="color:#ff69b4; font-style:italic;">Hint: Our anniversary date (4 numbers only) (MMDD)</p>
     <input type="password" id="passInput" placeholder="Type password here">
     <br>
     <button onclick="checkPass()">Unlock ❤️</button>
@@ -124,7 +124,7 @@
   <script>
     function checkPass() {
       var input = document.getElementById('passInput').value;
-      var correctPass = '0803';  // Your anniversary: August 3rd
+      var correctPass = '0813';  // Your anniversary: August 13
       if (input === correctPass) {
         document.getElementById('password-screen').style.display = 'none';
         document.getElementById('content').style.display = 'block';
