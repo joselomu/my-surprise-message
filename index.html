@@ -1,0 +1,32 @@
+<div id="password-screen" style="text-align:center; padding:50px; background:pink; font-family:Arial; height:100vh; display:flex; flex-direction:column; justify-content:center;">
+  <h1 style="color:#ff1493;">A Special Surprise Just for You.
+    Mi Moshi linda❤️</h1>
+  <p style="font-size:18px; margin:20px 0;">Enter the password to unlock your message:</p>
+  <p style="color:#ff69b4; font-style:italic;">Hint: Our anniversary date (MMDD)</p>
+  <input type="password" id="passInput" placeholder="Type password here" style="padding:10px; font-size:16px; border:2px solid #ff69b4; border-radius:10px; margin:10px;">
+  <br>
+  <button onclick="checkPass()" style="background:#ff69b4; color:white; padding:12px 24px; border:none; border-radius:25px; font-size:18px; cursor:pointer;">Unlock ❤️</button>
+</div>
+
+<div id="content" style="display:none; text-align:center; background:pink; padding:20px; font-family:Arial;" onload="showContent()">
+  <h1 style="color:#ff1493;">Diosito me mando a decir con alguien que sea fuerte y valiente, que no tenga miedo ni me desanime por que esta con nosotros. Ok no dice nosotros literal pero no hay un 'yo' sin vos :(</h1>
+  <p style="font-size:20px; margin:20px 0;">Watch this just for you...</p>
+  <!-- Paste your YouTube iframe here, replacing the example below -->
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/watch?v=ko8wA8C2LeI" title="Your Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="border-radius:10px;"></iframe>
+  <br><br>
+  <a href="tel:+504 97196791" style="background:#ff69b4; color:white; padding:15px 30px; text-decoration:none; border-radius:25px; font-size:20px; display:inline-block;"> Can we talk? </a>
+  <p style="margin-top:20px; font-size:14px; color:#666;">(Perrito triste guau guau)</p>
+</div>
+
+<script>
+function checkPass() {
+  var input = document.getElementById('passInput').value;
+  var correctPass = '0803';  // Change this to your password, e.g., '0704' for July 4th
+  if (input === correctPass) {
+    document.getElementById('password-screen').style.display = 'none';
+    document.getElementById('content').style.display = 'block';
+  } else {
+    alert('Oops! Wrong password. Try the hint again ❤️');
+  }
+}
+</script>
